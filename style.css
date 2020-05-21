@@ -1,0 +1,92 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+body {
+    width:100%;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:16px;
+    font-weight:400;
+    margin: 20px auto;
+    text-align:center;
+
+    background-image: linear-gradient(135deg, #ffffff, #ffe0e0)
+}
+
+header {
+    position:relative;
+    right:5.938rem;
+}
+
+#main-image {
+    height:250px;
+    position:relative;
+    top:1.188rem;
+    background-image:url("images/hero-mobile.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+#text {
+    position:relative;
+    top: 2.375rem;
+    margin:auto;
+    width:85%;
+}
+
+h1 span {
+    font-weight:300;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size:3.5rem;
+    letter-spacing:.5rem;
+    font-weight:600;
+    margin-bottom:1rem;
+}
+
+p {
+    font-size:1rem;
+    line-height:1.5rem;
+    margin-bottom:2rem;
+}
+
+#email {
+    width:85%;
+    height:3rem;
+    border:.5px solid #413a3a;
+    border-radius:30px;
+    background-color: transparent;
+    color:#413a3a;
+    padding-left:20px;
+}
+
+.button, #submit {
+    width:4.688rem;
+    height:3.2rem;
+    border: 1px solid transparent;
+    border-radius:30px;
+}
+
+.button {
+    position:relative;
+    bottom:3.25rem;
+    left:16.5rem;
+    background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+#submit {
+    color:transparent;
+    background-image: url(images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.red {
+    color:#c4adad;
+}
