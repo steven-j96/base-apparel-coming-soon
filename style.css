@@ -3,29 +3,29 @@
 html, body {
     margin:0;
     padding:0;
+    
 }
 
 body {
-    max-width:100%;
+    
     font-family: 'Josefin Sans', sans-serif;
     font-size:16px;
     font-weight:400;
-    margin: 20px auto;
     text-align:center;
 
-    background-image: linear-gradient(135deg, #ffffff, #ffe0e0)
+    max-width:100%;
+    height:100vh;
+
+    background-image: linear-gradient(135deg, #ffffff, #ffe0e0);
 }
 
-.d-block {
-    display:block!important;
-}
-
-.d-none {
-    display:none;
+.visible {
+    visibility:visible!important;
 }
 .container {
     max-width:80%;
-    margin:auto;
+    margin: auto;
+    padding-top:2.5rem;
 }
 
 
@@ -86,6 +86,14 @@ form {
     width:80%;
     margin:auto;
 }
+
+.error-icon {
+    position:relative;
+    float:right;
+    right:5rem;
+    bottom:2.313rem;
+    visibility:hidden;
+}
 #email {
     width:90%;
     height:3rem;
@@ -106,6 +114,7 @@ form {
 }
 .button, #submit {
     float:right;
+    left:1.5rem;
     width:4.688rem;
     height:3.35rem;
     border:none;
@@ -136,6 +145,7 @@ form {
     text-align:left;
     padding-top:3rem;
     padding-left:1.3rem;
+    visibility:hidden;
     
 }
 .red {
