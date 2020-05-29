@@ -1,11 +1,12 @@
+
+
 html, body {
     margin:0;
     padding:0;
 }
 
 body {
-    width:100%;
-
+    max-width:100%;
     font-family: 'Josefin Sans', sans-serif;
     font-size:16px;
     font-weight:400;
@@ -15,26 +16,47 @@ body {
     background-image: linear-gradient(135deg, #ffffff, #ffe0e0)
 }
 
-header {
-    position:relative;
-    right:5.938rem;
+.d-block {
+    display:block!important;
 }
 
-#main-image {
-    height:250px;
-    position:relative;
-    top:1.188rem;
-    background-image:url("images/hero-mobile.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
+.d-none {
+    display:none;
+}
+.container {
+    max-width:80%;
+    margin:auto;
+}
+
+
+header {
+    width:85%;
+    display:block;
+}
+
+header img {
+    max-width:100%;
+    height:auto;
+    float:left;   
+    margin-bottom:1.25rem;
+}
+
+
+
+.desktop-image {
+    display:none;
+}
+.mobile-image {
+    width:100%;
+    height:auto;
+    margin-bottom:1.875rem;
 }
 
 #text {
     position:relative;
-    top: 2.375rem;
+    top: 1.375rem;
     margin:auto;
-    width:85%;
+    width:100%;
 }
 
 h1 span {
@@ -42,8 +64,12 @@ h1 span {
 }
 
 h1 {
+    width:70%;
+    margin:auto;
+    
     text-transform: uppercase;
-    font-size:3.5rem;
+    font-size:3rem;
+    line-height:3.5rem;
     letter-spacing:.5rem;
     font-weight:600;
     margin-bottom:1rem;
@@ -55,28 +81,42 @@ p {
     margin-bottom:2rem;
 }
 
+
+form {
+    width:80%;
+    margin:auto;
+}
 #email {
-    width:85%;
+    width:90%;
     height:3rem;
-    border:.5px solid #413a3a;
-    border-radius:30px;
+    border:2px solid 	#cccccc;
+    border-radius:1.875rem;
     background-color: transparent;
-    color:#413a3a;
-    padding-left:20px;
+    color:	#cccccc;
+    padding-left:1.25rem;
+    float:left;
 }
 
+#email::placeholder{
+    color:#cccccc;
+}
+
+.invalid {
+    border:2px solid #f96262!important;
+}
 .button, #submit {
+    float:right;
     width:4.688rem;
-    height:3.2rem;
-    border: 1px solid transparent;
-    border-radius:30px;
+    height:3.35rem;
+    border:none;
+    border-radius:1.875rem;
 }
 
 .button {
     position:relative;
-    bottom:3.25rem;
-    left:16.5rem;
+    bottom:3.35rem;
     background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+    box-shadow: 5px 5px 20px 2.5px hsla(0, 36%, 70%, 0.562);
 }
 
 #submit {
@@ -85,8 +125,116 @@ p {
     background-repeat: no-repeat;
     background-position:center;
     background-color:transparent;
+} 
+
+#submit:hover{
+    background-color: #f8bfbf;
 }
 
+#response {
+    color:#f96262;
+    text-align:left;
+    padding-top:3rem;
+    padding-left:1.3rem;
+    
+}
 .red {
     color:#c4adad;
 }
+
+
+@media only screen and (min-device-width: 700px){
+    html{
+        font-size:18px;
+    }
+}
+
+@media only screen and (min-device-width: 800px){
+    html{
+        font-size:20px;
+    }
+}
+
+
+
+
+@media only screen and (min-device-width: 750px) and (orientation: landscape){
+    html {
+        font-size:16px;
+    }
+    
+    .container {
+        max-width:95%;
+    }
+    .mobile-image{
+        display:none;
+    }
+
+    #main-image {
+        width:45%;
+        height:100%;
+        float:right;
+    }
+
+    .desktop-image {
+        display:block;
+        max-width:100%;
+        height:auto;
+    }
+
+    header img {
+        margin-top: 3.125rem;
+    }
+
+
+    #text{
+        margin-top:2.125rem;
+        width:45%;
+        float:left;
+        text-align:left;
+    }
+
+    h1 {
+        margin-left:0;
+    }
+
+    form {
+        float:left;
+    }
+
+    .button, #submit {
+        height: 3.7rem;
+    }
+    .button {
+        bottom:3.6rem;
+    }
+}
+
+@media only screen and (min-device-width:1300px) and (orientation:landscape){
+    
+    .container {
+        max-width:80%;
+    }
+    header img {
+        margin-top:4.5rem;
+    }
+
+    #text {
+        position:relative;
+        right:10.313rem;
+        top:11rem;
+        max-width:35%;
+    }
+
+    form {
+        max-width:100%;
+    }
+
+    .button, #submit {
+        height:3.35rem;
+        float:right;
+    }
+    .button {
+        bottom:3.35rem;
+    }
+} 

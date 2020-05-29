@@ -8,27 +8,35 @@
     <title>Base Apparel - Coming Soon</title>
 </head>
 <body>
-    <header>
-        <img src="images/logo.svg" alt="logo">
-    </header>
+    <div class="container">
+        <header>
+            <img src="images/logo.svg" alt="logo">
+        </header>
 
-    <section id="main-image">
-    </section>
+        <section id="main-image">
+            <img src="images/hero-mobile.jpg" alt="coming soon image - mobile" class="mobile-image">
+            <img src="images/hero-desktop.jpg" akt="coming soon image - desktop" class="desktop-image">
+        </section>
 
-    <section id="text">
-        <h1>
-            <span class="red">We're</span> coming soon
-        </h1>
-        <p class="red">
-            Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
-        </p>
+        <section id="text">
+            <h1>
+                <span class="red">We're</span> coming soon
+            </h1>
+            <p class="red">
+                Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+            </p>
 
-        <form>
-            <input type="email" id="email" name="email" placeholder="Email Address">
-            <div class="button">
-                <input type="submit" id="submit">
-            </div>
-        </form>
-    </section>
+            <form>
+                <input type="email" id="email" name="email" placeholder="Email Address">
+                
+                <div class="button">
+                    <input type="submit" id="submit">
+                </div>
+                <p id="response" class="d-none">Please provide a valid email</p>
+            </form>
+        </section>
+    </div>
+
+    <script src="apparel.js"></script>
 </body>
 </html>
